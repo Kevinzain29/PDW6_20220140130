@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  .border {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 350px;
+    background-color: darkblue;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  
+  .gambar {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .join {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .judul {
+    color: aqua;
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .teks {
+    color: aliceblue;
+    margin: 0;
+    font-size: 20px;
+    margin-top: 7px;
+  }
+  
+
+  
+  
+  
