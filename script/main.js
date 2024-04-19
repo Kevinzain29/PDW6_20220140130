@@ -1,11 +1,12 @@
-var audio = document.querySelector("Music");
 var video = document.getElementById("videos");
+var playPauseBtn = document.getElementById("playPauseBtn");
 
-function formatTime(time) {
-    var minutes = Math.floor(time / 60);
-    var seconds = Math.floor(time % 60);
-    if (seconds < 10) {
-        seconds = "0" + seconds;
+playPauseBtn.addEventListener("click", function() {
+    if (video.paused) {
+        video.play();
+        playPauseBtn.textContent = "Pause";
+    } else {
+        video.pause();
+        playPauseBtn.textContent = "Play";
     }
-    return minutes + ":" + seconds;
-}
+});
